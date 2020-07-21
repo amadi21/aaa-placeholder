@@ -1,5 +1,24 @@
 {
   "extends": [
     "config:base"
-  ]
+  ],
+  packageRules: [
+    {
+      "description": "Disable all packages from updating",
+      "packagePatterns": ["*"],
+      "enabled": false
+    },
+    {
+      "description": "Re-enable com.netflix.hystrix packages",
+      "packagePatterns": ["^com\\.netflix\\.hystrix"],
+      "enabled": true
+    },
+    {
+      "description": "Disable snapshot versions from updating",
+      // "matchCurrentVersion": "!/.*-SNAPSHOT$/",
+      // "matchCurrentVersion": "-SNAPSHOT$",
+      "matchCurrentVersion": "/-SNAPSHOT$/",
+      "enabled": false
+    }
+  ],
 }
