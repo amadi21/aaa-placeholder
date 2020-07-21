@@ -15,8 +15,6 @@
     },
     {
       "description": "Disable snapshot versions from updating",
-      // "matchCurrentVersion": "!/.*-SNAPSHOT$/",
-      // "matchCurrentVersion": "-SNAPSHOT$",
       "matchCurrentVersion": "/-SNAPSHOT$/",
       "enabled": false
     }
