@@ -1,5 +1,5 @@
 {
-  packageRules: [
+  "packageRules": [
     {
       "description": "Disable all packages from updating",
       "packagePatterns": ["*"],
