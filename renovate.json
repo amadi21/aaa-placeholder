@@ -12,6 +12,7 @@
     },
     {
       "description": "Disable snapshot versions from updating",
+      "packagepatterns": ["*"],
       "matchCurrentVersion": "/-SNAPSHOT$/",
       "enabled": false
     }
